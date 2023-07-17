@@ -1,6 +1,28 @@
 let input = "cubos \ncCuuuggbooyos";
 
 function processData(input) {
+  let newInput = input.trim().split("\n").map((word) => word.split(""));
+
+  let passWord1 = newInput[0].filter(words => words.trim().length > 0);
+  let passWord2 = newInput[1].filter(words => words.trim().length > 0);
+  
+  let index1 = 0; 
+
+  for (let letter of passWord2) {
+    if (letter === passWord1[index1]) {
+      index1++; 
+    }
+  }
+
+const result = (index1 === passWord1.length) ? "SIM" : "NAO";
+  
+  console.log(result);
+   
+} 
+
+
+
+/* function processData(input) {
     let newInput = input.trim().split("\n").map((word) => word.split(""));
 
     let passWord1 = newInput[0].filter(words => words.trim().length > 0);
@@ -21,7 +43,7 @@ function processData(input) {
     console.log("NAO")
 
 }
-
+ */
 
 /* function processData(input) {
     let newInput = input.trim().split("\n").map((word) => word.split(""));
