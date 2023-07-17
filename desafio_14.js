@@ -72,4 +72,14 @@ function processData(input) {
 } */
 
 
+/* passWord1 = passWord1[0].trim();
+passWord2 = passWord2[0].trim();
 
+
+if (passWord2.startsWith(passWord1[0]) && passWord2.endsWith(passWord1[passWord1.length - 1])) {
+    console.log("SIM");
+} else {
+    console.log("NAO")
+}
+
+}  */
